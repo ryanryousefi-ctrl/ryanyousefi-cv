@@ -352,7 +352,7 @@ section {
 .hero-inner {
   position: relative;
   z-index: 2;
-  max-width: 1100px;
+  max-width: 1280px;
   width: 100%;
   margin: 0 auto;
   display: flex;
@@ -374,16 +374,16 @@ section {
 }
 
 .hero-avatar {
-  width: 280px;
-  height: 280px;
+  width: 460px;
+  height: 460px;
   border-radius: 50%;
-  padding: 3px;
+  padding: 4px;
   background: linear-gradient(135deg, #7c3aed 0%, #22d3ee 100%);
   box-shadow:
     0 0 0 1px rgba(124,58,237,.3),
-    0 0 30px rgba(124,58,237,.55),
-    0 0 70px rgba(124,58,237,.25),
-    0 0 120px rgba(34,211,238,.12);
+    0 0 40px rgba(124,58,237,.6),
+    0 0 90px rgba(124,58,237,.3),
+    0 0 160px rgba(34,211,238,.15);
   animation: avatar-glow 5s ease-in-out infinite;
   position: relative;
 }
@@ -411,7 +411,7 @@ section {
   height: 100%;
   border-radius: 50%;
   object-fit: cover;
-  object-position: center 15%;
+  object-position: center 20%;
   display: block;
 }
 
@@ -419,16 +419,16 @@ section {
   0%, 100% {
     box-shadow:
       0 0 0 1px rgba(124,58,237,.3),
-      0 0 30px rgba(124,58,237,.55),
-      0 0 70px rgba(124,58,237,.25),
-      0 0 120px rgba(34,211,238,.12);
+      0 0 40px rgba(124,58,237,.6),
+      0 0 90px rgba(124,58,237,.3),
+      0 0 160px rgba(34,211,238,.15);
   }
   50% {
     box-shadow:
       0 0 0 1px rgba(124,58,237,.5),
-      0 0 40px rgba(124,58,237,.75),
-      0 0 90px rgba(124,58,237,.35),
-      0 0 150px rgba(34,211,238,.2);
+      0 0 55px rgba(124,58,237,.8),
+      0 0 120px rgba(124,58,237,.4),
+      0 0 200px rgba(34,211,238,.25);
   }
 }
 
@@ -1197,7 +1197,7 @@ footer {
   .tools-grid    { grid-template-columns: repeat(2, 1fr); }
   .hero-planet   { width: 480px; height: 480px; right: -80px; top: -60px; }
   .hero-inner    { gap: 3rem; }
-  .hero-avatar   { width: 200px; height: 200px; }
+  .hero-avatar   { width: 320px; height: 320px; }
   .nav-links     { gap: 1.5rem; }
   .nav-cta       { display: none; }
 }
@@ -1220,7 +1220,7 @@ footer {
   .hero-planet   { width: 300px; height: 300px; right: -60px; top: -20px; opacity: .5; }
   .hero-inner        { flex-direction: column; gap: 2.5rem; }
   .hero-avatar-wrap  { order: -1; }
-  .hero-avatar       { width: 180px; height: 180px; }
+  .hero-avatar       { width: 260px; height: 260px; }
   .hero-ctas         { flex-direction: column; }
   .cta-primary, .cta-outline, .cta-download { justify-content: center; }
   .contact-btns  { flex-direction: column; align-items: stretch; }
