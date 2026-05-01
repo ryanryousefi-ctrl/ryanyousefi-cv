@@ -516,6 +516,31 @@ section {
 .cta-linkedin:hover { border-color: #0077b5; color: #0077b5; background: rgba(0,119,181,.08); }
 .cta-twitter:hover  { border-color: #1d9bf0; color: #1d9bf0; background: rgba(29,155,240,.08); }
 
+.cta-download {
+  display: inline-flex;
+  align-items: center;
+  gap: .55rem;
+  background: rgba(124,58,237,.12);
+  color: var(--p3);
+  font-size: .9rem;
+  font-weight: 700;
+  padding: .95rem 2rem;
+  border-radius: 100px;
+  text-decoration: none;
+  border: 1px solid rgba(124,58,237,.45);
+  cursor: pointer;
+  letter-spacing: .02em;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 20px rgba(124,58,237,.2), inset 0 0 20px rgba(124,58,237,.05);
+  transition: all .3s var(--ease);
+}
+.cta-download:hover {
+  background: rgba(124,58,237,.22);
+  border-color: var(--p3);
+  box-shadow: 0 0 35px rgba(124,58,237,.45), inset 0 0 20px rgba(124,58,237,.1);
+  transform: translateY(-3px);
+}
+
 /* ==============================================
    SCROLL CUE
    ============================================== */
@@ -1117,6 +1142,6 @@ footer {
   .contact-box   { padding: 3.5rem 1.5rem; }
   .hero-planet   { width: 300px; height: 300px; right: -60px; top: -20px; opacity: .5; }
   .hero-ctas     { flex-direction: column; }
-  .cta-primary, .cta-outline { justify-content: center; }
+  .cta-primary, .cta-outline, .cta-download { justify-content: center; }
   .contact-btns  { flex-direction: column; align-items: stretch; }
 }
