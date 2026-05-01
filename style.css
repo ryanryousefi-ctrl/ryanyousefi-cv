@@ -374,8 +374,8 @@ section {
 }
 
 .hero-avatar {
-  width: 165px;
-  height: 165px;
+  width: 280px;
+  height: 280px;
   border-radius: 50%;
   padding: 3px;
   background: linear-gradient(135deg, #7c3aed 0%, #22d3ee 100%);
@@ -411,7 +411,7 @@ section {
   height: 100%;
   border-radius: 50%;
   object-fit: cover;
-  object-position: center top;
+  object-position: center 15%;
   display: block;
 }
 
@@ -1197,7 +1197,7 @@ footer {
   .tools-grid    { grid-template-columns: repeat(2, 1fr); }
   .hero-planet   { width: 480px; height: 480px; right: -80px; top: -60px; }
   .hero-inner    { gap: 3rem; }
-  .hero-avatar   { width: 140px; height: 140px; }
+  .hero-avatar   { width: 200px; height: 200px; }
   .nav-links     { gap: 1.5rem; }
   .nav-cta       { display: none; }
 }
@@ -1220,7 +1220,7 @@ footer {
   .hero-planet   { width: 300px; height: 300px; right: -60px; top: -20px; opacity: .5; }
   .hero-inner        { flex-direction: column; gap: 2.5rem; }
   .hero-avatar-wrap  { order: -1; }
-  .hero-avatar       { width: 120px; height: 120px; }
+  .hero-avatar       { width: 180px; height: 180px; }
   .hero-ctas         { flex-direction: column; }
   .cta-primary, .cta-outline, .cta-download { justify-content: center; }
   .contact-btns  { flex-direction: column; align-items: stretch; }
