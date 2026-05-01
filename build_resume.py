@@ -88,7 +88,7 @@ pdf.ln(5)
 # SUMMARY
 section(pdf, 'Professional Summary')
 body(pdf,
-    'Since 2022, I have led teams driving over $1B in combined transaction volume across wagering, fees, '
+    'Since 2021, I have led teams driving over $1B in combined transaction volume across wagering, fees, '
     'NFT sales, and partnerships, working across nearly every major blockchain. I bring more than 20 years '
     'of experience in content and management, including 5+ years focused specifically on crypto gaming.\n\n'
     'Self-driven and highly motivated, with a career shaped by navigating multiple crypto cycles, gaining '
@@ -160,7 +160,7 @@ job(pdf,
 # KEY METRICS
 section(pdf, 'Key Metrics')
 metrics = [
-    ('$1B+',   'Combined transaction volume across wagering, fees, NFT sales, and partnerships since 2022'),
+    ('$1B+',   'Combined transaction volume across wagering, fees, NFT sales, and partnerships since 2021'),
     ('20+',    'Years in content and management'),
     ('5+',     'Years focused on crypto gaming'),
     ('$100M+', 'Racing volume generated at Photo Finish(TM) LIVE on Solana'),
