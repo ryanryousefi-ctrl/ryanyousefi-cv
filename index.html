@@ -3,12 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Ryan Yousefi — Crypto Gaming Growth & Content Leader. Led teams driving $1B+ in gaming platform activity across Solana, Polygon, and beyond." />
+  <meta name="description" content="Ryan Yousefi — Crypto Gaming Growth & Content Leader. Led teams driving $1B+ in gaming platform activity." />
   <meta property="og:title" content="Ryan Yousefi — Crypto Gaming Leader" />
-  <meta property="og:description" content="Led teams driving $1B+ in gaming platform activity. 20+ years in content and management, 5+ years in crypto gaming." />
+  <meta property="og:description" content="Led teams driving $1B+ in gaming platform activity. 20+ years experience, 5+ years crypto gaming." />
   <meta property="og:type" content="website" />
   <title>Ryan Yousefi — Crypto Gaming Leader</title>
-
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -16,19 +15,11 @@
 </head>
 <body>
 
-  <!-- Star Field Canvas -->
   <canvas id="star-canvas" aria-hidden="true"></canvas>
-
-  <!-- Ambient Orbs -->
-  <div class="orb orb-1" aria-hidden="true"></div>
-  <div class="orb orb-2" aria-hidden="true"></div>
-  <div class="orb orb-3" aria-hidden="true"></div>
-
-  <!-- Scroll Progress -->
   <div class="progress-bar" id="progress-bar"></div>
 
   <!-- NAV -->
-  <nav id="main-nav" aria-label="Main navigation">
+  <nav id="main-nav">
     <a href="#hero" class="nav-logo">RY<span>.</span></a>
     <ul class="nav-links">
       <li><a href="#about">About</a></li>
@@ -38,15 +29,13 @@
       <li><a href="#education">Education</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
-    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false" background="none" border="none">
-      <span></span>
-      <span></span>
-      <span></span>
+    <a href="#contact" class="nav-cta">Hire Me</a>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
     </button>
   </nav>
 
-  <!-- MOBILE NAV -->
-  <div class="mobile-nav" id="mobile-nav" role="navigation" aria-label="Mobile navigation">
+  <div class="mobile-nav" id="mobile-nav">
     <a href="#about">About</a>
     <a href="#experience">Experience</a>
     <a href="#metrics">Metrics</a>
@@ -57,183 +46,187 @@
 
   <main>
 
-    <!-- ========================
-         HERO
-         ======================== -->
+    <!-- HERO -->
     <section id="hero">
-      <div class="hero-grid-overlay" aria-hidden="true"></div>
+      <div class="hero-planet" aria-hidden="true">
+        <div class="planet-ring planet-ring-1"></div>
+        <div class="planet-ring planet-ring-2"></div>
+        <div class="planet-ring planet-ring-3"></div>
+      </div>
+      <div class="hero-grid" aria-hidden="true"></div>
 
-      <div class="hero-content">
-        <div class="hero-badge fade-up">
-          <span class="badge-dot"></span>
-          Available for New Opportunities
+      <div class="hero-inner">
+        <div class="hero-kicker fade-up">
+          <span class="kicker-dot"></span>
+          <span>Available for New Opportunities</span>
         </div>
 
-        <h1 class="hero-name fade-up fade-up-delay-1">
-          Ryan<br /><span class="hero-name-accent">Yousefi</span>
+        <h1 class="hero-name fade-up fade-up-1">
+          <span class="name-line-1">Ryan</span>
+          <span class="name-line-2">Yousefi</span>
         </h1>
 
-        <p class="hero-headline fade-up fade-up-delay-2">
-          Led Teams Driving $1B+ in Gaming Platform Activity
+        <div class="hero-divline fade-up fade-up-2" aria-hidden="true"></div>
+
+        <p class="hero-headline fade-up fade-up-2">
+          Led Teams Driving <em>$1B+</em> in Gaming Platform Activity
         </p>
 
-        <p class="hero-typed fade-up fade-up-delay-3">
-          <span id="typed-role">Crypto Gaming Growth &amp; Content Leader</span><span class="typed-cursor">|</span>
+        <p class="hero-typed-wrap fade-up fade-up-3">
+          <span id="typed-role">Crypto Gaming Growth &amp; Content Leader</span><span class="cursor">|</span>
         </p>
 
-        <p class="hero-paragraph fade-up fade-up-delay-3">
+        <p class="hero-para fade-up fade-up-3">
           Since 2022, I've led teams driving over $1B in combined transaction volume across wagering, fees, NFT sales, and partnerships, working across nearly every major blockchain.
         </p>
 
-        <div class="hero-actions fade-up fade-up-delay-4">
-          <a href="#experience" class="btn-primary">
-            <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
+        <div class="hero-ctas fade-up fade-up-4">
+          <a href="#experience" class="cta-primary">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
             View Experience
           </a>
-          <a href="#contact" class="btn-ghost">
-            <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+          <a href="#contact" class="cta-outline">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
             Get in Touch
           </a>
         </div>
 
-        <div class="hero-meta fade-up fade-up-delay-5">
-          <span class="hero-location">
-            <svg width="13" height="13" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+        <div class="hero-meta fade-up fade-up-5">
+          <span>
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
             United States &amp; Vietnam
           </span>
-          <span class="hero-divider">·</span>
-          <span class="hero-chain">Solana · Polygon · Ethereum</span>
+          <span class="meta-sep">·</span>
+          <span class="meta-chains">Solana · Polygon · Ethereum</span>
         </div>
       </div>
 
-      <div class="scroll-indicator" aria-hidden="true">
+      <div class="scroll-cue" aria-hidden="true">
         <div class="scroll-mouse"><div class="scroll-dot"></div></div>
         <span>Scroll</span>
       </div>
     </section>
 
-    <!-- ========================
-         ABOUT
-         ======================== -->
+    <!-- SECTION DIVIDER -->
+    <div class="sep" aria-hidden="true"></div>
+
+    <!-- ABOUT -->
     <section id="about">
-      <div class="section-eyebrow">
-        <span class="eyebrow-number">01</span>
-        <span class="eyebrow-label">Background</span>
+      <div class="section-label">
+        <span class="label-num">01</span>
+        <span class="label-text">About</span>
       </div>
-      <h2 class="section-title">About Me</h2>
+      <h2 class="section-heading">Background</h2>
 
-      <div class="about-grid">
-        <div class="about-text fade-up">
+      <div class="about-layout">
+        <div class="about-copy fade-up">
           <p>Since 2022, I've led teams driving over $1B in combined transaction volume across wagering, fees, NFT sales, and partnerships, working across nearly every major blockchain. I bring more than 20 years of experience in content and management, including 5+ years focused specifically on crypto gaming.</p>
-          <p>I'm self-driven and highly motivated, with a career shaped by navigating multiple crypto cycles — gaining real, hard-earned experience through both market highs and downturns. Battle-tested and calm under pressure, I approach challenges with a clear, solutions-first mindset, adapting quickly and consistently moving teams and projects forward.</p>
-          <p>Over time, I've built strong relationships with both players and industry leaders — earning a reputation as a trusted, well-respected operator and leader who can align communities, partners, and teams to execute at a high level.</p>
+          <p>I'm self-driven and highly motivated, with a career shaped by navigating multiple crypto cycles — gaining real, hard-earned experience through both market highs and downturns. Battle-tested and calm under pressure, I approach challenges with a clear, solutions-first mindset.</p>
+          <p>Over time, I've built strong relationships with both players and industry leaders — earning a reputation as a trusted operator and leader who can align communities, partners, and teams to execute at a high level.</p>
         </div>
-
-        <div class="about-aside">
-          <div class="glass-card fade-up fade-up-delay-1">
-            <div class="glass-card-label">Based In</div>
-            <div class="glass-card-value">United States &amp; Vietnam</div>
-            <div class="glass-card-sub">Remote-first, global operator</div>
+        <div class="about-cards">
+          <div class="info-card fade-up fade-up-1">
+            <div class="info-card-label">Based In</div>
+            <div class="info-card-val">United States &amp; Vietnam</div>
+            <div class="info-card-sub">Remote-first · Global operator</div>
           </div>
-          <div class="glass-card fade-up fade-up-delay-2">
-            <div class="glass-card-label">Specialties</div>
-            <div class="glass-card-value">Crypto Gaming · Growth · Partnerships · Content Strategy · Community Building · Team Leadership</div>
+          <div class="info-card fade-up fade-up-2">
+            <div class="info-card-label">Specialties</div>
+            <div class="info-card-val">Crypto Gaming · Growth · Partnerships · Content Strategy · Community Building</div>
           </div>
-          <div class="glass-card fade-up fade-up-delay-3">
-            <div class="glass-card-label">Blockchains</div>
-            <div class="glass-card-value">Solana · Polygon · Ethereum · + More</div>
-            <div class="glass-card-sub">Multi-chain experience across the ecosystem</div>
+          <div class="info-card fade-up fade-up-3">
+            <div class="info-card-label">Blockchains</div>
+            <div class="info-card-val">Solana · Polygon · Ethereum · + More</div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ========================
-         EXPERIENCE
-         ======================== -->
-    <section id="experience">
-      <div class="section-eyebrow">
-        <span class="eyebrow-number">02</span>
-        <span class="eyebrow-label">Career</span>
-      </div>
-      <h2 class="section-title">Experience</h2>
+    <div class="sep" aria-hidden="true"></div>
 
-      <div class="exp-stack">
+    <!-- EXPERIENCE -->
+    <section id="experience">
+      <div class="section-label">
+        <span class="label-num">02</span>
+        <span class="label-text">Career</span>
+      </div>
+      <h2 class="section-heading">Experience</h2>
+
+      <div class="exp-list">
 
         <!-- Photo Finish LIVE -->
         <div class="exp-card fade-up">
-          <div class="exp-card-glow" aria-hidden="true"></div>
-          <div class="exp-card-inner">
-            <div class="exp-top">
-              <div class="exp-top-left">
+          <div class="exp-accent" aria-hidden="true"></div>
+          <div class="exp-body">
+            <div class="exp-head">
+              <div>
                 <div class="exp-studio">Third Time Games</div>
                 <div class="exp-company">Photo Finish™ LIVE</div>
                 <div class="exp-role">Director of Communications</div>
               </div>
-              <div class="exp-badge-wrap">
-                <span class="exp-badge exp-badge--current">
-                  <span class="badge-live-dot"></span>
-                  Sep 2022 – Present
+              <div class="exp-meta-col">
+                <span class="exp-badge exp-badge-live">
+                  <span class="live-dot"></span>Sep 2022 – Present
                 </span>
-                <span class="exp-platform">Solana</span>
+                <span class="chain-pill chain-solana">Solana</span>
               </div>
             </div>
 
-            <ul class="exp-list">
-              <li>Founding team member of Photo Finish™ LIVE, the <strong>#1 all-time revenue game on Solana</strong>.</li>
-              <li>Led the team that secured <strong>Official Gaming Partner status of the Kentucky Derby</strong>.</li>
-              <li>Executed multi-year campaigns with <strong>NBC Sports</strong> across television and digital platforms.</li>
-              <li>Led activations with <strong>dozens of crypto industry partners</strong> across conferences and digital campaigns.</li>
+            <ul class="exp-bullets">
+              <li>Founding team member of Photo Finish™ LIVE — the <strong>#1 all-time revenue game on Solana</strong>.</li>
+              <li>Led team that secured <strong>Official Gaming Partner of the Kentucky Derby</strong>.</li>
+              <li>Executed multi-year campaigns with <strong>NBC Sports</strong> across television and digital.</li>
+              <li>Led activations with <strong>dozens of crypto industry partners</strong> at conferences globally.</li>
               <li>Organized and led <strong>in-person events and conferences</strong> across multiple countries.</li>
             </ul>
 
-            <div class="exp-stats-row">
-              <div class="exp-stat">
-                <span class="exp-stat-val">$100M+</span>
-                <span class="exp-stat-lbl">Racing Volume</span>
+            <div class="exp-metrics">
+              <div class="exp-metric">
+                <span class="em-val">$100M+</span>
+                <span class="em-lbl">Racing Volume</span>
               </div>
-              <div class="exp-stat">
-                <span class="exp-stat-val">$50M+</span>
-                <span class="exp-stat-lbl">Breeding Volume</span>
+              <div class="exp-metric">
+                <span class="em-val">$50M+</span>
+                <span class="em-lbl">Breeding Volume</span>
               </div>
-              <div class="exp-stat">
-                <span class="exp-stat-val">$25M+</span>
-                <span class="exp-stat-lbl">Horse Purchases</span>
+              <div class="exp-metric">
+                <span class="em-val">$25M+</span>
+                <span class="em-lbl">Horse Purchases</span>
               </div>
             </div>
           </div>
         </div>
 
         <!-- ZED RUN -->
-        <div class="exp-card fade-up fade-up-delay-1">
-          <div class="exp-card-glow exp-card-glow--cyan" aria-hidden="true"></div>
-          <div class="exp-card-inner">
-            <div class="exp-top">
-              <div class="exp-top-left">
+        <div class="exp-card fade-up fade-up-1">
+          <div class="exp-accent exp-accent-cyan" aria-hidden="true"></div>
+          <div class="exp-body">
+            <div class="exp-head">
+              <div>
                 <div class="exp-studio">Virtually Human Studios</div>
                 <div class="exp-company">ZED RUN</div>
                 <div class="exp-role">Content Director</div>
               </div>
-              <div class="exp-badge-wrap">
+              <div class="exp-meta-col">
                 <span class="exp-badge">Jul 2021 – Aug 2022</span>
-                <span class="exp-platform exp-platform--polygon">Polygon</span>
+                <span class="chain-pill chain-polygon">Polygon</span>
               </div>
             </div>
 
-            <ul class="exp-list">
+            <ul class="exp-bullets">
               <li>One of the <strong>first 10 employees</strong> at ZED RUN, a pioneering crypto horse racing game on Polygon.</li>
               <li>Directed content, social, EDM, and partnership strategy across all channels.</li>
               <li>Delivered campaigns generating <strong>millions in NFT sales</strong> and <strong>tens of millions in racing volume</strong>.</li>
               <li>Led community onboarding initiatives and global event activations.</li>
             </ul>
 
-            <div class="partner-row">
-              <span class="partner-chip">Netflix</span>
-              <span class="partner-chip">Atari</span>
-              <span class="partner-chip">Budweiser</span>
-              <span class="partner-chip">NASCAR</span>
-              <span class="partner-chip">Stella Artois</span>
-              <span class="partner-chip">Victoria Racing Club</span>
+            <div class="partner-strip">
+              <span class="partner-pill">Netflix</span>
+              <span class="partner-pill">Atari</span>
+              <span class="partner-pill">Budweiser</span>
+              <span class="partner-pill">NASCAR</span>
+              <span class="partner-pill">Stella Artois</span>
+              <span class="partner-pill">Victoria Racing Club</span>
             </div>
           </div>
         </div>
@@ -241,190 +234,144 @@
       </div>
     </section>
 
-    <!-- ========================
-         KEY METRICS
-         ======================== -->
-    <section id="metrics">
-      <div class="section-eyebrow">
-        <span class="eyebrow-number">03</span>
-        <span class="eyebrow-label">Impact</span>
-      </div>
-      <h2 class="section-title">Key Metrics</h2>
+    <div class="sep" aria-hidden="true"></div>
 
-      <div class="metrics-showcase">
+    <!-- METRICS -->
+    <section id="metrics">
+      <div class="section-label">
+        <span class="label-num">03</span>
+        <span class="label-text">Impact</span>
+      </div>
+      <h2 class="section-heading">Key Metrics</h2>
+
+      <div class="metrics-grid">
         <div class="metric-card fade-up">
-          <div class="metric-card-glow" aria-hidden="true"></div>
-          <div class="metric-card-number">$1B+</div>
-          <div class="metric-card-name">Combined Transaction Volume</div>
-          <div class="metric-card-desc">Wagering, fees, NFT sales &amp; partnerships across major blockchains since 2022</div>
+          <div class="mc-top-bar"></div>
+          <div class="mc-num">$1B+</div>
+          <div class="mc-title">Combined Transaction Volume</div>
+          <div class="mc-desc">Wagering, fees, NFT sales &amp; partnerships across major blockchains since 2022</div>
         </div>
-        <div class="metric-card fade-up fade-up-delay-1">
-          <div class="metric-card-glow metric-card-glow--cyan" aria-hidden="true"></div>
-          <div class="metric-card-number">20+</div>
-          <div class="metric-card-name">Years in Content &amp; Management</div>
-          <div class="metric-card-desc">Deep experience leading content, communications, and creative teams across industries</div>
+        <div class="metric-card fade-up fade-up-1">
+          <div class="mc-top-bar mc-top-bar-cyan"></div>
+          <div class="mc-num">20+</div>
+          <div class="mc-title">Years in Content &amp; Management</div>
+          <div class="mc-desc">Leading content, communications, and creative teams across industries</div>
         </div>
-        <div class="metric-card fade-up fade-up-delay-2">
-          <div class="metric-card-glow" aria-hidden="true"></div>
-          <div class="metric-card-number">5+</div>
-          <div class="metric-card-name">Years in Crypto Gaming</div>
-          <div class="metric-card-desc">Battle-tested across multiple market cycles with real, hard-earned blockchain experience</div>
+        <div class="metric-card fade-up fade-up-2">
+          <div class="mc-top-bar"></div>
+          <div class="mc-num">5+</div>
+          <div class="mc-title">Years in Crypto Gaming</div>
+          <div class="mc-desc">Battle-tested across multiple market cycles with real blockchain experience</div>
         </div>
-        <div class="metric-card fade-up fade-up-delay-3">
-          <div class="metric-card-glow metric-card-glow--cyan" aria-hidden="true"></div>
-          <div class="metric-card-number">$100M+</div>
-          <div class="metric-card-name">Racing Volume on Solana</div>
-          <div class="metric-card-desc">Platform volume generated at Photo Finish™ LIVE, the #1 all-time revenue game on Solana</div>
+        <div class="metric-card fade-up fade-up-3">
+          <div class="mc-top-bar mc-top-bar-cyan"></div>
+          <div class="mc-num">$100M+</div>
+          <div class="mc-title">Racing Volume on Solana</div>
+          <div class="mc-desc">#1 all-time revenue game on Solana — Photo Finish™ LIVE platform volume</div>
         </div>
       </div>
     </section>
 
-    <!-- ========================
-         TOOLS
-         ======================== -->
+    <div class="sep" aria-hidden="true"></div>
+
+    <!-- TOOLS -->
     <section id="tools">
-      <div class="section-eyebrow">
-        <span class="eyebrow-number">04</span>
-        <span class="eyebrow-label">Stack</span>
+      <div class="section-label">
+        <span class="label-num">04</span>
+        <span class="label-text">Stack</span>
       </div>
-      <h2 class="section-title">Tools &amp; Technologies</h2>
+      <h2 class="section-heading">Tools &amp; Technologies</h2>
 
       <div class="tools-grid">
         <div class="tool-card fade-up">
-          <div class="tool-card-header">
-            <span class="tool-icon">⚡</span>
-            <span class="tool-cat">Productivity</span>
-          </div>
-          <div class="tool-tags">
-            <span class="tool-tag">Microsoft Office</span>
-            <span class="tool-tag">Google Workspace</span>
+          <div class="tc-icon">⚡</div>
+          <div class="tc-name">Productivity</div>
+          <div class="tc-tags">
+            <span>Microsoft Office</span><span>Google Workspace</span>
           </div>
         </div>
-
-        <div class="tool-card fade-up fade-up-delay-1">
-          <div class="tool-card-header">
-            <span class="tool-icon">📢</span>
-            <span class="tool-cat">Content &amp; Marketing</span>
-          </div>
-          <div class="tool-tags">
-            <span class="tool-tag">WordPress</span>
-            <span class="tool-tag">Webflow</span>
-            <span class="tool-tag">Notion</span>
-            <span class="tool-tag">Mailchimp</span>
-            <span class="tool-tag">Klaviyo</span>
-            <span class="tool-tag">Hootsuite</span>
-            <span class="tool-tag">Buffer</span>
-            <span class="tool-tag">Canva</span>
-            <span class="tool-tag">Adobe Creative Suite</span>
+        <div class="tool-card fade-up fade-up-1">
+          <div class="tc-icon">📢</div>
+          <div class="tc-name">Content &amp; Marketing</div>
+          <div class="tc-tags">
+            <span>WordPress</span><span>Webflow</span><span>Notion</span><span>Mailchimp</span><span>Klaviyo</span><span>Hootsuite</span><span>Buffer</span><span>Canva</span><span>Adobe Creative Suite</span>
           </div>
         </div>
-
-        <div class="tool-card fade-up fade-up-delay-2">
-          <div class="tool-card-header">
-            <span class="tool-icon">🌐</span>
-            <span class="tool-cat">Web &amp; Development</span>
-          </div>
-          <div class="tool-tags">
-            <span class="tool-tag">GitHub</span>
-            <span class="tool-tag">Vercel</span>
-            <span class="tool-tag">HTML</span>
-            <span class="tool-tag">CSS</span>
-            <span class="tool-tag">GoDaddy</span>
-            <span class="tool-tag">Cloudflare</span>
+        <div class="tool-card fade-up fade-up-2">
+          <div class="tc-icon">🌐</div>
+          <div class="tc-name">Web &amp; Dev</div>
+          <div class="tc-tags">
+            <span>GitHub</span><span>Vercel</span><span>HTML</span><span>CSS</span><span>GoDaddy</span><span>Cloudflare</span>
           </div>
         </div>
-
-        <div class="tool-card fade-up fade-up-delay-3">
-          <div class="tool-card-header">
-            <span class="tool-icon">🤖</span>
-            <span class="tool-cat">AI &amp; Automation</span>
-          </div>
-          <div class="tool-tags">
-            <span class="tool-tag">ChatGPT</span>
-            <span class="tool-tag">Claude Code</span>
-            <span class="tool-tag">Midjourney</span>
-            <span class="tool-tag">DALL·E</span>
-            <span class="tool-tag">Grok</span>
+        <div class="tool-card fade-up fade-up-3">
+          <div class="tc-icon">🤖</div>
+          <div class="tc-name">AI &amp; Automation</div>
+          <div class="tc-tags">
+            <span>ChatGPT</span><span>Claude Code</span><span>Midjourney</span><span>DALL·E</span><span>Grok</span>
           </div>
         </div>
-
-        <div class="tool-card fade-up fade-up-delay-4">
-          <div class="tool-card-header">
-            <span class="tool-icon">📊</span>
-            <span class="tool-cat">Analytics</span>
-          </div>
-          <div class="tool-tags">
-            <span class="tool-tag">Google Analytics</span>
-            <span class="tool-tag">Search Console</span>
-            <span class="tool-tag">Ahrefs</span>
-            <span class="tool-tag">SEMrush</span>
-            <span class="tool-tag">Hotjar</span>
+        <div class="tool-card fade-up fade-up-4">
+          <div class="tc-icon">📊</div>
+          <div class="tc-name">Analytics</div>
+          <div class="tc-tags">
+            <span>Google Analytics</span><span>Search Console</span><span>Ahrefs</span><span>SEMrush</span><span>Hotjar</span>
           </div>
         </div>
-
-        <div class="tool-card fade-up fade-up-delay-5">
-          <div class="tool-card-header">
-            <span class="tool-icon">🗂</span>
-            <span class="tool-cat">Project Management</span>
-          </div>
-          <div class="tool-tags">
-            <span class="tool-tag">Slack</span>
-            <span class="tool-tag">Trello</span>
-            <span class="tool-tag">Asana</span>
-            <span class="tool-tag">Monday.com</span>
-            <span class="tool-tag">Jira</span>
+        <div class="tool-card fade-up fade-up-5">
+          <div class="tc-icon">🗂</div>
+          <div class="tc-name">Project Management</div>
+          <div class="tc-tags">
+            <span>Slack</span><span>Trello</span><span>Asana</span><span>Monday.com</span><span>Jira</span>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ========================
-         EDUCATION
-         ======================== -->
+    <div class="sep" aria-hidden="true"></div>
+
+    <!-- EDUCATION -->
     <section id="education">
-      <div class="section-eyebrow">
-        <span class="eyebrow-number">05</span>
-        <span class="eyebrow-label">Academic</span>
+      <div class="section-label">
+        <span class="label-num">05</span>
+        <span class="label-text">Academic</span>
       </div>
-      <h2 class="section-title">Education</h2>
+      <h2 class="section-heading">Education</h2>
 
       <div class="edu-card fade-up">
-        <div class="edu-card-glow" aria-hidden="true"></div>
         <div class="edu-icon" aria-hidden="true">
-          <svg width="28" height="28" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 14l9-5-9-5-9 5 9 5z"/><path stroke-linecap="round" stroke-linejoin="round" d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"/><path stroke-linecap="round" stroke-linejoin="round" d="M12 14l9-5-9-5-9 5 9 5zm0 0v6"/></svg>
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 14l9-5-9-5-9 5 9 5z"/><path stroke-linecap="round" stroke-linejoin="round" d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"/></svg>
         </div>
-        <div class="edu-body">
+        <div class="edu-text">
           <div class="edu-degree">Masters Degree in Business Management</div>
           <div class="edu-school">Western Governors University</div>
-          <div class="edu-location">Utah, United States</div>
+          <div class="edu-loc">Utah, United States</div>
         </div>
       </div>
     </section>
 
-    <!-- ========================
-         CONTACT
-         ======================== -->
+    <div class="sep" aria-hidden="true"></div>
+
+    <!-- CONTACT -->
     <section id="contact">
-      <div class="contact-wrap fade-up">
-        <div class="contact-orb" aria-hidden="true"></div>
-        <div class="section-eyebrow" style="justify-content:center;">
-          <span class="eyebrow-number">06</span>
-          <span class="eyebrow-label">Connect</span>
+      <div class="contact-box fade-up">
+        <div class="contact-glow" aria-hidden="true"></div>
+        <div class="section-label" style="justify-content:center; margin-bottom:1.5rem;">
+          <span class="label-num">06</span>
+          <span class="label-text">Connect</span>
         </div>
-        <h2 class="contact-title">Ready to Build<br /><span class="contact-title-accent">Something Big?</span></h2>
-        <p class="contact-sub">
-          I'm open to leadership roles in crypto gaming, Web3 growth, partnerships, and content strategy. Let's talk.
-        </p>
-        <div class="contact-buttons">
-          <a href="mailto:rzayo24@gmail.com" class="cta-btn cta-btn--primary">
-            <svg width="17" height="17" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+        <h2 class="contact-heading">Ready to Build<br/><span class="contact-accent">Something Big?</span></h2>
+        <p class="contact-sub">Open to leadership roles in crypto gaming, Web3 growth, partnerships, and content strategy.</p>
+        <div class="contact-btns">
+          <a href="mailto:rzayo24@gmail.com" class="cta-primary">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
             Email Me
           </a>
-          <a href="https://linkedin.com/in/ryanyousefi" target="_blank" rel="noopener noreferrer" class="cta-btn cta-btn--linkedin">
+          <a href="https://linkedin.com/in/ryanyousefi" target="_blank" rel="noopener noreferrer" class="cta-outline cta-linkedin">
             <svg width="17" height="17" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
             LinkedIn
           </a>
-          <a href="https://twitter.com/ryanyousefi" target="_blank" rel="noopener noreferrer" class="cta-btn cta-btn--twitter">
+          <a href="https://twitter.com/ryanyousefi" target="_blank" rel="noopener noreferrer" class="cta-outline cta-twitter">
             <svg width="17" height="17" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L1.254 2.25H8.08l4.253 5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
             Twitter / X
           </a>
@@ -435,13 +382,11 @@
   </main>
 
   <footer>
-    <div class="footer-inner">
-      <span class="footer-name">Ryan Yousefi</span>
-      <span class="footer-sep">·</span>
-      <span class="footer-role">Crypto Gaming Leader</span>
-      <span class="footer-sep">·</span>
-      <span class="footer-year">2025</span>
-    </div>
+    <span class="ft-name">Ryan Yousefi</span>
+    <span class="ft-sep">·</span>
+    <span>Crypto Gaming Leader</span>
+    <span class="ft-sep">·</span>
+    <span>2025</span>
   </footer>
 
   <script src="script.js"></script>
