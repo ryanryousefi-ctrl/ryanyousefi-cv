@@ -55,6 +55,20 @@ body {
   overflow-x: hidden;
 }
 
+strong, b {
+  display: inline;
+  letter-spacing: normal;
+  word-spacing: normal;
+  margin: 0;
+  padding: 0;
+}
+
+p, li {
+  line-height: 1.65;
+  letter-spacing: normal;
+  word-spacing: normal;
+}
+
 /* deep space atmospheric gradient — always visible */
 body::before {
   content: '';
@@ -800,27 +814,25 @@ section {
 
 .exp-bullets {
   list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: .85rem;
   margin-bottom: 2.25rem;
 }
 .exp-bullets li {
-  display: flex;
-  align-items: flex-start;
-  gap: .85rem;
+  position: relative;
+  padding-left: 1.35rem;
   color: var(--t2);
   font-size: .93rem;
   line-height: 1.65;
+  margin-bottom: .85rem;
 }
+.exp-bullets li:last-child { margin-bottom: 0; }
 .exp-bullets li::before {
   content: '';
-  display: block;
+  position: absolute;
+  left: 0;
+  top: .62em;
   width: 5px; height: 5px;
   border-radius: 50%;
   background: var(--p3);
-  flex-shrink: 0;
-  margin-top: .6em;
 }
 .exp-bullets li strong { color: var(--t1); font-weight: 700; }
 
