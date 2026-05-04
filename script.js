@@ -168,11 +168,11 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
   const el = document.getElementById('typed-role');
   if (!el) return;
   const roles = [
-    'Crypto Gaming Growth & Content Leader',
     'Director of Communications',
-    'Web3 Partnerships Strategist',
-    'Blockchain Gaming Executive',
-    'Community & Growth Leader',
+    'GTM & Growth Strategist',
+    'Product Marketing Leader',
+    'Community & Partnerships Operator',
+    'Event Planning & Brand Lead',
   ];
   let ri = 0, ci = 0, del = false;
 
